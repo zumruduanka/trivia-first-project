@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Master</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main class="quiz-container">
+
+        <!--Başlangıç Ekranı-->
+        <section id="start-screen">
+
+            <h1>Quiz Master</h1>
+
+            <p>Bilgini test etmeye hazır mısın?</p>
+
+            <div class="game-info">
+                <p>📋 10 Soru</p>
+                <p>⏱️ Her soru 15 saniye</p>
+                <p>🏆 En Yüksek Skor: <span id="high-score">0</span></p>
+            </div>
+
+            <button id="start-btn">Oyuna Başla</button>
+
+        </section>
+
+        <!-- Oyun Ekranı -->
+        <section id="game-screen">
+
+            <div class="game-header">
+
+                <span id="question-number">
+                    Soru 1 / 10
+                </span>
+
+                <span id="timer">
+                    ⏱️ 15
+                </span>
+            </div>
+            <div class="question-area">
+                <h2 id="question">Soru burada görünecek.</h2>
+            </div>
+            <div class="answers">
+
+                <button class="answer-btn">A) Cevap</button>
+
+                <button class="answer-btn">B) Cevap</button>
+
+                <button class="answer-btn">C) Cevap</button>
+
+                <button class="answer-btn">D) Cevap</button>
+
+            </div>
+        </section>
+
+        <!-- BİTİŞ EKRANI -->
+
+<section id="result-screen">
+
+    <h1>🎉 Oyun Bitti!</h1>
+
+    <p>Toplam Skor</p>
+
+    <div class="score">
+        <span id="final-score">0</span> / 100
+    </div>
+
+    <div class="result-stats">
+
+        <div class="stat">
+            <span>✅</span>
+            <p>Doğru</p>
+            <strong id="correct-count">0</strong>
+        </div>
+
+        <div class="stat">
+            <span>❌</span>
+            <p>Yanlış</p>
+            <strong id="wrong-count">0</strong>
+        </div>
+
+        <div class="stat">
+            <span>📊</span>
+            <p>Başarı</p>
+            <strong id="success-rate">0%</strong>
+        </div>
+
+    </div>
+
+    <p>
+        🏆 En Yüksek Skor:
+        <span id="result-high-score">0</span>
+    </p>
+
+    <button id="restart-btn">
+        Tekrar Oyna
+    </button>
+
+</section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>>
